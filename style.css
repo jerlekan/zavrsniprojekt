@@ -28,7 +28,6 @@ body {
 	font-family: 'Lobster', cursive;
 }
 
-
 @media screen and (max-width:760px) {
 	.header {
 		height: 300px;
@@ -36,13 +35,19 @@ body {
 	.header a {
 		display: none;
 	}
+	.header p {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-size: 32pt;
+	}
 }
-	
-	
-	
+
 .main-menu {
 	width: 100%;
-	background-color: #0000FF;
+	background-color: #3CB371;
 }
 .main-menu li {
 	display: inline-block;
@@ -65,13 +70,15 @@ body {
 	color: #fff;
 }
 
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width:760px) {
+	.main-menu {
+		padding: 0;
+	}
 	.main-menu li {
 		display: block;
 		text-align: center;
-	}
-	.main-menu {
-		padding: 0;
+		width: 100%;
 	}
 }
 
@@ -116,7 +123,7 @@ body {
 
 
 .contact-form {	
-	background-color: #F1C40F;
+	background-color: #3CB371;
 	padding: 100px;
 }
 .contact-form h1 {
